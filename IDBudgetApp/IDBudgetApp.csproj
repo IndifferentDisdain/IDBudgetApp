@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IDBudgetApp.Common\IDBudgetApp.Common.csproj" />
+      <ProjectReference Include="..\IDBudgetApp.Infrastructure\IDBudgetApp.Infrastructure.csproj" />
+      <ProjectReference Include="..\IDBudgetApp.UseCases\IDBudgetApp.UseCases.csproj" />
+    </ItemGroup>
+
+</Project>
